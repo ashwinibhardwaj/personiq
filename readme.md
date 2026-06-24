@@ -4,7 +4,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ashwinibhardwaj/personiq/assets/personiq-logo.jpg">
-  <img alt="personiq" src="https://raw.githubusercontent.com/ashwinibhardwaj/personiq/main/assets/logo-light.svg" height="48">
+  <img alt="personiq" src="https://raw.githubusercontent.com/ashwinibhardwaj/personiq/assets/personiq-logo.jpg" height="48">
 </picture>
 
 <h3>Personalization memory for LangChain & LangGraph</h3>
@@ -16,7 +16,6 @@
 [![PyPI version](https://img.shields.io/pypi/v/personiq?style=flat-square&color=3B82F6&labelColor=1e293b&label=pypi)](https://pypi.org/project/personiq/)
 [![Python](https://img.shields.io/pypi/pyversions/personiq?style=flat-square&color=3B82F6&labelColor=1e293b)](https://pypi.org/project/personiq/)
 [![License](https://img.shields.io/pypi/l/personiq?style=flat-square&color=34d399&labelColor=1e293b)](https://github.com/ashwinibhardwaj/personiq/blob/main/LICENSE)
-[![Downloads](https://img.shields.io/pypi/dm/personiq?style=flat-square&color=a78bfa&labelColor=1e293b)](https://pypi.org/project/personiq/)
 [![Docs](https://img.shields.io/badge/docs-live-3B82F6?style=flat-square&labelColor=1e293b)](https://ashwinibhardwaj.github.io/personiq/)
 
 <br/>
