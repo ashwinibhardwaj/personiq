@@ -19,11 +19,11 @@
 [![PyPI version](https://img.shields.io/pypi/v/personiq?style=flat-square&color=3B82F6&labelColor=1e293b&label=pypi)](https://pypi.org/project/personiq/)
 [![Python](https://img.shields.io/pypi/pyversions/personiq?style=flat-square&color=3B82F6&labelColor=1e293b)](https://pypi.org/project/personiq/)
 [![License](https://img.shields.io/pypi/l/personiq?style=flat-square&color=34d399&labelColor=1e293b)](https://github.com/ashwinibhardwaj/personiq/blob/main/LICENSE)
-[![Docs](https://img.shields.io/badge/docs-live-3B82F6?style=flat-square&labelColor=1e293b)](https://ashwinibhardwaj.github.io/personiq/)
+[![Docs](https://img.shields.io/badge/docs-live-3B82F6?style=flat-square&labelColor=1e293b)](https://ashwinibhardwaj.github.io/personiq-docs/)
 
 <br/>
 
-[**Documentation**](https://ashwinibhardwaj.github.io/personiq/) · [**PyPI**](https://pypi.org/project/personiq/) · [**Quickstart**](#quickstart) · [**Examples**](#integration-styles) · [**Discord**](https://discord.gg/your-server)
+[**Documentation**](https://ashwinibhardwaj.github.io/personiq-docs/) · [**PyPI**](https://pypi.org/project/personiq/) · [**Quickstart**](#quickstart) · [**Examples**](#integration-styles) · [**Discord**](https://discord.gg/your-server)
 
 <br/>
 
@@ -355,7 +355,7 @@ Pull requests are welcome. Please open an issue first to discuss significant cha
 
 <div align="center">
 
-**[Documentation](https://ashwinibhardwaj.github.io/personiq/)** · **[PyPI](https://pypi.org/project/personiq/)** · **[Changelog](https://github.com/ashwinibhardwaj/personiq/blob/main/CHANGELOG.md)** · **[License (MIT)](https://github.com/ashwinibhardwaj/personiq/blob/main/LICENSE)**
+**[Documentation](https://ashwinibhardwaj.github.io/personiq-docs/)** · **[PyPI](https://pypi.org/project/personiq/)** · **[Changelog](https://github.com/ashwinibhardwaj/personiq/blob/main/CHANGELOG.md)** · **[License (MIT)](https://github.com/ashwinibhardwaj/personiq/blob/main/LICENSE)**
 
 <br/>
 
