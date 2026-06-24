@@ -3,7 +3,7 @@
 <br />
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ashwinibhardwaj/personiq/main/assets/logo-dark.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ashwinibhardwaj/personiq/assets/personiq-logo.jpg">
   <img alt="personiq" src="https://raw.githubusercontent.com/ashwinibhardwaj/personiq/main/assets/logo-light.svg" height="48">
 </picture>
 
