@@ -1,0 +1,24 @@
+# ── Core (always required) ────────────────────────────────────────────────────
+langchain>=0.2.0
+langchain-core>=0.2.0
+langgraph>=0.1.0
+sentence-transformers>=3.0.0
+sqlite-vec>=0.1.1
+pydantic>=2.0.0
+numpy>=1.26.0
+python-dotenv>=1.0.0
+tenacity>=8.2.0
+
+# ── LLM provider — uncomment ONE (or more) ───────────────────────────────────
+langchain-groq>=0.1.0            # pip install personiq[groq]
+# langchain-openai>=0.1.0        # pip install personiq[openai]
+# langchain-anthropic>=0.1.0     # pip install personiq[anthropic]
+# langchain-ollama>=0.1.0        # pip install personiq[ollama]
+# langchain-mistralai>=0.1.0     # pip install personiq[mistral]
+# langchain-huggingface>=0.0.3   # pip install personiq[huggingface]
+
+# ── Dev / testing ─────────────────────────────────────────────────────────────
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
+pytest-mock>=3.12.0
+ruff>=0.4.0

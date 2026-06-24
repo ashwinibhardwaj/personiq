@@ -1,0 +1,4 @@
+.env
+/venv
+/dist
+/personiq.egg-info
