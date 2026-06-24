@@ -28,7 +28,7 @@
 
 ---
 
-personiq gives your AI application a **persistent, searchable memory of each user** — extracted automatically from conversation, stored locally, and injected back into every future prompt. No database to manage. No cloud dependency. No friction.
+personiq gives your AI application a **persistent, searchable memory of each user** - extracted automatically from conversation, stored locally, and injected back into every future prompt. No database to manage. No cloud dependency. No friction.
 
 ```python
 from langchain_groq import ChatGroq
@@ -44,7 +44,7 @@ system = f"{ctx}\n{base_system}" if ctx else base_system
 await piq.learn("alice", messages)
 ```
 
-After the first conversation, Alice's skills, goals, and preferences are woven into every response — without her repeating herself.
+After the first conversation, Alice's skills, goals, and preferences are woven into every response - without her repeating herself.
 
 <br/>
 
@@ -58,7 +58,7 @@ Future prompt ◀──  Inject  ◀──  Hybrid Search (RRF)
 
 | Stage | What happens |
 |---|---|
-| **Extract** | Your LLM reads the conversation and identifies durable facts — skills, goals, preferences, style, personal context |
+| **Extract** | Your LLM reads the conversation and identifies durable facts - skills, goals, preferences, style, personal context |
 | **Store** | Facts persist in a local SQLite file with vector embeddings (`all-MiniLM-L6-v2`) and BM25 keyword indexes |
 | **Retrieve** | Hybrid search fuses cosine similarity + BM25 + recency decay via Reciprocal Rank Fusion |
 | **Inject** | Top-ranked memories are prepended to your system prompt as bullets or a natural-language persona |
@@ -69,7 +69,7 @@ Future prompt ◀──  Inject  ◀──  Hybrid Search (RRF)
 
 ```bash
 # install with your LLM provider
-pip install personiq[groq]        # Groq — llama, gemma, mixtral
+pip install personiq[groq]        # Groq - llama, gemma, mixtral
 pip install personiq[openai]      # OpenAI
 pip install personiq[anthropic]   # Anthropic Claude
 pip install personiq[ollama]      # local, no API key
@@ -83,13 +83,13 @@ pip install personiq[all]         # Groq + OpenAI + Anthropic
 
 ## Quickstart
 
-### 1 — Install
+### 1 - Install
 
 ```bash
 pip install personiq[groq]
 ```
 
-### 2 — Create the adapter
+### 2 - Create the adapter
 
 ```python
 from langchain_groq import ChatGroq
@@ -98,7 +98,7 @@ from personiq import PersoniqAdapter
 piq = PersoniqAdapter(llm=ChatGroq(model="llama-3.1-8b-instant"))
 ```
 
-### 3 — Add to your loop
+### 3 - Add to your loop
 
 ```python
 from langchain_core.messages import HumanMessage, SystemMessage
@@ -124,7 +124,7 @@ That's it. personiq handles the rest silently.
 
 ### LangGraph nodes *(recommended)*
 
-The cleanest integration — two nodes, zero boilerplate.
+The cleanest integration - two nodes, zero boilerplate.
 
 ```python
 from langchain_groq import ChatGroq
@@ -188,7 +188,7 @@ response = await llm.ainvoke(messages)
 
 ## Context modes
 
-**`mode="context"`** — structured bullets, best for technical assistants and dashboards:
+**`mode="context"`** - structured bullets, best for technical assistants and dashboards:
 
 ```
 [personiq: what I know about this user]
@@ -203,13 +203,13 @@ Goals:
 [end of personiq context]
 ```
 
-**`mode="persona"`** — natural language, best for conversational chatbots:
+**`mode="persona"`** - natural language, best for conversational chatbots:
 
 ```
 You already know this user. Here is what you know about them:
 They work with Go and PostgreSQL. They're currently focused on building
 a distributed payment service. They prefer concise, direct answers.
-Use this naturally — don't recite it back, just let it shape your response.
+Use this naturally - don't recite it back, just let it shape your response.
 ```
 
 ```python
@@ -240,11 +240,11 @@ personiq classifies every extracted fact into one of six categories, each with i
 
 ## Works alongside other memory systems
 
-personiq stores data in its own SQLite database. It does not interfere with Mem0, Zep, LangMem, or any other memory setup — run them side by side.
+personiq stores data in its own SQLite database. It does not interfere with Mem0, Zep, LangMem, or any other memory setup - run them side by side.
 
 ```python
-piq  = PersoniqAdapter(llm=llm)   # personiq — personalization facts
-mem0 = MemoryClient(...)           # Mem0 — conversation history
+piq  = PersoniqAdapter(llm=llm)   # personiq - personalization facts
+mem0 = MemoryClient(...)           # Mem0 - conversation history
 
 # both work independently on the same conversation
 ctx  = piq.persona("alice", message)
@@ -321,12 +321,12 @@ print(f"Deleted {deleted} memories")
 
 personiq is designed for any application where knowing the user improves outcomes:
 
-- **Personalised chatbots** — the assistant remembers name, job, and preferences across sessions
-- **Recommendation engines** — surface products and content matching stored preferences and goals
-- **AI sales agents** — know the prospect's industry, pain points, and purchase intent across touches
-- **Content personalisation** — adapt tone, complexity, and topics to each user automatically
-- **Customer support** — remember past issues, preferences, and technical environment per user
-- **Ad targeting** — build rich user profiles from natural conversation signals
+- **Personalised chatbots** - the assistant remembers name, job, and preferences across sessions
+- **Recommendation engines** - surface products and content matching stored preferences and goals
+- **AI sales agents** - know the prospect's industry, pain points, and purchase intent across touches
+- **Content personalisation** - adapt tone, complexity, and topics to each user automatically
+- **Customer support** - remember past issues, preferences, and technical environment per user
+- **Ad targeting** - build rich user profiles from natural conversation signals
 
 <br/>
 
@@ -337,7 +337,7 @@ git clone https://github.com/ashwinibhardwaj/personiq
 cd personiq
 pip install -e ".[dev]"
 
-# run the full test suite — no API key needed, all LLM calls are mocked
+# run the full test suite - no API key needed, all LLM calls are mocked
 pytest tests/ -v
 
 # lint
