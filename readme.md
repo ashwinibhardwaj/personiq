@@ -2,10 +2,9 @@
 
 <br />
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ashwinibhardwaj/personiq/main/assets/personiq-logo.jpg">
-  <img alt="personiq" src="https://raw.githubusercontent.com/ashwinibhardwaj/personiq/main/assets/personiq-logo.jpg" height="48">
-</picture>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ashwinibhardwaj/personiq/main/assets/personiq-logo.jpg" alt="PersonIQ" width="200">
+</p>
 
 <h3>Personalization memory for LangChain & LangGraph</h3>
 
